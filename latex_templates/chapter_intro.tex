@@ -1,0 +1,36 @@
+\documentclass{book}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{lipsum} % just for sample text
+\geometry{margin=1in}
+
+% Header setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textit{Thermodynamics}}
+\fancyhead[R]{\textit{Chapter Introduction}}
+\fancyfoot[C]{\thepage}
+
+% Section title format
+\titleformat{\chapter}[block]{\Huge\bfseries}{Chapter \thechapter:}{1em}{}
+
+\begin{document}
+
+\chapter{Introduction}
+\section*{Prominent Personalities in Thermodynamics}
+\lipsum[1] % replace with actual content
+
+\section*{Schematic of a Numbered Water Cup}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{path/to/water_cup_schematic.png}
+    \caption{Numbered water cup schematic}
+    \label{fig:water_cup}
+\end{figure}
+
+\section*{Figure-Text Collaboration Guidelines}
+\lipsum[2] % replace with actual content
+
+\end{document}
