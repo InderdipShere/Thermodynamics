@@ -1,0 +1,48 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+
+% Color definitions
+\definecolor{thought}{RGB}{255,215,0}
+\definecolor{keyconcept}{RGB}{135,206,250}
+\definecolor{historical}{RGB}{144,238,144}
+\definecolor{watercup}{RGB}{255,182,193}
+\definecolor{personality}{RGB}{255,99,71}
+
+% Custom boxes
+\newtcolorbox{thoughtbox}{colback=thought!5!white,colframe=thought!75!black,title=Thought Experiment}
+\newtcolorbox{keyconceptbox}{colback=keyconcept!5!white,colframe=keyconcept!75!black,title=Key Concept}
+\newtcolorbox{historicalbox}{colback=historical!5!white,colframe=historical!75!black,title=Historical Context}
+\newtcolorbox{watercupbox}{colback=watercup!5!white,colframe=watercup!75!black,title=Water Cup Analogy}
+\newtcolorbox{personalitybox}{colback=personality!5!white,colframe=personality!75!black,title=Personality}
+
+% Custom commands for physics notation
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\unit}[1]{\, \text{#1}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
+
+% Chapter formatting
+\renewcommand{\chaptername}{Chapter}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdfauthor={InderdipShere},
+    pdftitle={Thermodynamics Textbook},
+    pdfsubject={Thermodynamics},
+    pdfkeywords={thermodynamics, physics, textbook}
+}
